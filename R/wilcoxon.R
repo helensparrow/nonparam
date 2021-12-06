@@ -1,4 +1,4 @@
-#' Wilcoxon Statistic and Test
+#' Wilcoxon Correlation
 #'
 #' @description The Wilcoxon test statistic and corresponding p-value, from one of three alternative hypotheses
 #' @param X A vector of numbers

@@ -33,6 +33,7 @@ w21 <- rnorm(15, 0, 1); w22 <- rnorm(15, 5, 1)
 
 Comparison:
 ```{r}
+# built-in
 wilcox.test(c(1,2,3), c(6,5,4))
 wilcox.test(w21, w22)
 ```
@@ -57,6 +58,7 @@ Comparison:
 ### spearmantest
 Example:
 ```{r}
+library(SuppDists)
 spearmantest(c(1,2,3), c(6,5,4))
 spearmantest(w21, w22)
 ```
@@ -66,8 +68,8 @@ spearmantest(w21, w22)
 Comparison:
 ```{r}
 # built-in
-cor(x = w21, y = w22, method = "spearman")
-
+cor.test(c(1,2,3), c(6,5,4), method = "spearman", alternative = "greater")
+cor.test(x = w21, y = w22, method = "spearman", alternative = "greater")
 ```
 
 

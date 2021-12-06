@@ -1,4 +1,4 @@
-#' Calculates Spearman's correlation
+#' Spearman Correlation
 #'
 #' @description This requires the SuppDists library to run; which is a package from CRAN, and can be installed and loaded with \code{install.packages("SuppDists")} and \code{library(SuppDists)}
 #'
