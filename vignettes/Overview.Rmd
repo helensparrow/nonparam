@@ -1,0 +1,75 @@
+---
+title: "Overview"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+```{r setup}
+#library(nonpara625)
+```
+
+
+
+### wilcoxontest
+Example:
+```{r}
+
+```
+
+
+
+Comparision:
+```{r}
+
+```
+
+
+
+### kendalltest
+Example:
+```{r}
+
+```
+
+
+
+Comparision:
+```{r}
+# built-in
+tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
+```
+
+
+### spearmantest
+Example:
+```{r}
+# built-in
+
+```
+
+
+
+Comparision:
+```{r}
+# built-inn
+rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
+```
+
+
+
+
+
+
+
+
