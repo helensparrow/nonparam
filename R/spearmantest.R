@@ -22,8 +22,7 @@ spearmantest <- function(X, Y) {
   pval <- (1-pSpearman(rs, n))
 
   results <- data.frame('Quantity' = c("Test Statistic (rs)","Critical Value", "P-Value"),
-                        'By-Hand' = c(rs, rsalpha, pval),
-                        'Built-In Func' = c(rsa$estimate, NA, rsa$p.value))
+                        'Value' = c(rs, rsalpha, pval))
   return(results)
 }
 

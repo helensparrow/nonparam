@@ -29,7 +29,7 @@ Example:
 
 
 
-Comparision:
+Comparison:
 ```{r}
 
 ```
@@ -44,7 +44,7 @@ Example:
 
 
 
-Comparision:
+Comparison:
 ```{r}
 # built-in
 #tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
@@ -60,10 +60,14 @@ Example:
 
 
 
-Comparision:
+Comparison:
 ```{r}
 # built-in
 #rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
+
+results <- data.frame('Quantity' = c("Test Statistic (rs)","Critical Value", "P-Value"),
+                        'By-Hand' = c(rs, rsalpha, pval),
+                        'Built-In Func' = c(rsa$estimate, NA, rsa$p.value))
 ```
 
 

@@ -9,7 +9,7 @@
 #' @return The wilcoxon test statistic and p-value between \code{X} and \code{Y}, calculated both exactly and asymptotically
 #' @examples
 #' wilcoxon(c(1,2,3), c(6,5,4))
-#' wilcoxon(rnorm(), rnorm())
+#' wilcoxon(rnorm(15, 0, 1), rnorm(15, 5, 1))
 #'
 
 wilcoxon <- function(X, Y, alpha = 0.05, alternative = "two.sided", digits = 4) {
