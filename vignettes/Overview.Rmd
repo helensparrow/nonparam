@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 
 ```{r setup}
-#library(nonpara625)
+#library(nonparam)
 ```
 
 
@@ -47,7 +47,7 @@ Example:
 Comparision:
 ```{r}
 # built-in
-tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
+#tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
 ```
 
 
@@ -63,7 +63,7 @@ Example:
 Comparision:
 ```{r}
 # built-inn
-rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
+#rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
 ```
 
 
