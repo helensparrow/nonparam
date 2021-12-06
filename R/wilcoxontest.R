@@ -81,6 +81,6 @@ wilcoxontest <- function() {
                                          "HL Delta Estimate", "Moses CI Lower", "Moses CI Upper"),
                           round(results, digits))
 
-    return(kable(results, digits = digits))
+    return(results)
   }
 }

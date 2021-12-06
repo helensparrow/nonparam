@@ -74,5 +74,6 @@ kendalltest.tauCI <- function() {
   results <- data.frame('Quantity' = c("Test Statistic (Kbar)","CI Lower", "CI Upper"),
                         'By-Hand' = c(Kbar, CI.l, 1),
                         'Built-In Func' = c(NA, -0.035, 1))
+  return(results)
 }
 

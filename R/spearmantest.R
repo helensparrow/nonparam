@@ -13,6 +13,7 @@ spearmantest.exact <- function() {
   results <- data.frame('Quantity' = c("Test Statistic (rs)","Critical Value", "P-Value"),
                         'By-Hand' = c(rs, rsalpha, pval),
                         'Built-In Func' = c(rsa$estimate, NA, rsa$p.value))
+  return(results)
 }
 
 
