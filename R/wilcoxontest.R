@@ -1,6 +1,5 @@
 
-wilcoxontest <- function() {
-  myWilcoxon <- function(X, Y, alpha = 0.05, alternative = "two.sided", digits = 4) {
+wilcoxontest <- function(X, Y, alpha = 0.05, alternative = "two.sided", digits = 4) {
     alpha <- ifelse(alternative == "two.sided", alpha/2, alpha)
 
     # Wilcoxon Two-Sample Test
@@ -66,21 +65,15 @@ wilcoxontest <- function() {
     CI.moses <- D[c(ifelse(alternative == "less", NA, c.alpha),
                     ifelse(alternative == "greater", NA, w.alpha))]
 
-    # Asymptotic Version of Moses
-    c.alpha.a <- floor(eu - qnorm(1-alpha) * sqrt(varu))
-    w.alpha.a <- n * m + 1 - c.alpha.a
-    CI.moses.a <- D[c(ifelse(alternative == "less", NA, c.alpha.a),
-                      ifelse(alternative == "greater", NA, w.alpha.a))]
-
 
     results <- data.frame('Exact' = c(W, U, cv.wilcox, p.val, actAlpha, delta.hat, CI.moses),
-                          'Asymptotic' = c(NA, NA, cv.wilcox.a, p.val.a, actAlpha.a, NA, CI.moses.a))
+                          'Asymptotic' = c(NA, NA, cv.wilcox.a, p.val.a, actAlpha.a, NA, NA))
 
     results <- data.frame('Quantity' = c("Test Statistic: W", "Test Statistic: U", "CV Lower",
                                          "CV Upper", "P-Value", "Actual Alpha",
-                                         "HL Delta Estimate", "Moses CI Lower", "Moses CI Upper"),
+                                         "HL Delta Estimate"),
                           round(results, digits))
 
     return(results)
-  }
 }
+
