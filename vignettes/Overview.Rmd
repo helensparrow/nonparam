@@ -54,7 +54,7 @@ Comparision:
 ### spearmantest
 Example:
 ```{r}
-# built-in
+
 
 ```
 
@@ -62,7 +62,7 @@ Example:
 
 Comparision:
 ```{r}
-# built-inn
+# built-in
 #rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
 ```
 
