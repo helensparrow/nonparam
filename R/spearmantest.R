@@ -4,8 +4,8 @@
 #' @param Y A vector of numbers
 #' @return The spearman correlation between \code{X} and \code{Y}
 #' @examples
-#' add(1, 1)
-#' add(10, 1)
+#' spearmantest(1, 1)
+#' spearmantest(10, 1)
 #'
 
 spearmantest <- function(X, Y) {

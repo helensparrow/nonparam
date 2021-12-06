@@ -18,7 +18,7 @@ The spearman correlation between \code{X} and \code{Y}
 Calculates Spearman's correlation, which is the same as calculating Pearson correlation on the ranked data.
 }
 \examples{
-add(1, 1)
-add(10, 1)
+spearmantest(1, 1)
+spearmantest(10, 1)
 
 }
