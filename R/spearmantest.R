@@ -6,12 +6,12 @@
 #' @param Y A vector of numbers
 #' @return The spearman correlation between \code{X} and \code{Y}
 #' @examples
-#' spearmantest(c(1,2,3), c(6,5,4))
-#' spearmantest(rnorm(15, 0, 1), rnorm(15, 5, 1))
+#' spearman(c(1,2,3), c(6,5,4))
+#' spearman(rnorm(15, 0, 1), rnorm(15, 5, 1))
 #'
 
 
-spearmantest <- function(X, Y) {
+spearman <- function(X, Y) {
   n <- length(X)
 
   Si <- rank(X)

@@ -43,7 +43,7 @@ wilcox.test(w21, w22)
 ### kendalltest
 Example:
 ```{r}
-
+#kendall()
 ```
 
 
@@ -51,7 +51,7 @@ Example:
 Comparison:
 ```{r}
 # built-in
-#tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
+#cor.test(x = X, y = Y, method = "kendall", conf.level = 0.95, alternative = "greater")
 ```
 
 
@@ -59,8 +59,8 @@ Comparison:
 Example:
 ```{r}
 library(SuppDists)
-spearmantest(c(1,2,3), c(6,5,4))
-spearmantest(w21, w22)
+spearman(c(1,2,3), c(6,5,4))
+spearman(w21, w22)
 ```
 
 

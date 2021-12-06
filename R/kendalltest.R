@@ -9,7 +9,7 @@
 
 
 
-kendalltest.exact <- function() {
+kendall <- function() {
   n <- nrow(data)
 
   Q <- function(pi, pj) { ifelse((pj[1]-pi[1])*(pj[2]-pi[2]) < 0, -1, 1) }
@@ -38,4 +38,5 @@ kendalltest.exact <- function() {
                                        "P-Value"),
                         'By-Hand' = c(K, Kbar, kalpha, p.val),
                         'Built-In Func' = c(NA, tt$estimate, NA, tt$p.value))
+  return(results)
 }
