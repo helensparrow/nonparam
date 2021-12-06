@@ -1,14 +1,15 @@
 #' Calculates Spearman's correlation
 #'
+#' @description This requires the SuppDists library to run; which is a package from CRAN, and can be installed and loaded with \code{install.packages("SuppDists")} and \code{library(SuppDists)}
+#'
 #' @param X A vector of numbers
 #' @param Y A vector of numbers
 #' @return The spearman correlation between \code{X} and \code{Y}
 #' @examples
 #' spearmantest(c(1,2,3), c(6,5,4))
-#' spearmantest(10, 1)
+#' spearmantest(rnorm(15, 0, 1), rnorm(15, 5, 1))
 #'
 
-library(SuppDists)
 
 spearmantest <- function(X, Y) {
   n <- length(X)
