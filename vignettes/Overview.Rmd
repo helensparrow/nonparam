@@ -43,7 +43,8 @@ wilcox.test(w21, w22)
 ### kendalltest
 Example:
 ```{r}
-#kendall()
+kendall(c(1,2,3), c(6,5,4))
+kendall(rnorm(15, 0, 1), rnorm(15, 5, 1))
 ```
 
 
@@ -51,7 +52,8 @@ Example:
 Comparison:
 ```{r}
 # built-in
-#cor.test(x = X, y = Y, method = "kendall", conf.level = 0.95, alternative = "greater")
+cor.test(c(1,2,3), c(6,5,4), method = "kendall")
+cor.test(x = w21, y = w22, method = "kendall")
 ```
 
 
