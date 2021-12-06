@@ -2,7 +2,7 @@
 % Please edit documentation in R/spearmantest.R
 \name{spearmantest}
 \alias{spearmantest}
-\title{Calculates Spearman's correlation, which is the same as calculating Pearson correlation on the ranked data.}
+\title{Calculates Spearman's correlation}
 \usage{
 spearmantest(X, Y)
 }
@@ -15,10 +15,10 @@ spearmantest(X, Y)
 The spearman correlation between \code{X} and \code{Y}
 }
 \description{
-Calculates Spearman's correlation, which is the same as calculating Pearson correlation on the ranked data.
+Calculates Spearman's correlation
 }
 \examples{
-spearmantest(1, 1)
+spearmantest(c(1,2,3), c(6,5,4))
 spearmantest(10, 1)
 
 }

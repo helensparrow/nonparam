@@ -1,16 +1,16 @@
+#' Wilcoxon Statistic and Test
 #'
+#' @description The Wilcoxon test statistic and corresponding p-value, from one of three alternative hypotheses
+#' @param X A vector of numbers
+#' @param Y A vector of numbers
+#' @param alpha Alpha value
+#' @param alternative One of 'two.sided' (default), 'greater', or 'less'
+#' @param digits The desired number of digits after the decimal point
+#' @return The wilcoxon test statistic and p-value between \code{X} and \code{Y}, calculated both exactly and asymptotically
+#' @examples
+#' wilcoxon(c(1,2,3), c(6,5,4))
+#' wilcoxon(rnorm(), rnorm())
 #'
-#'
-#'
-#'
-#'
-#'
-#'
-#'
-#'
-
-
-
 
 wilcoxon <- function(X, Y, alpha = 0.05, alternative = "two.sided", digits = 4) {
   alpha <- ifelse(alternative == "two.sided", alpha/2, alpha)
